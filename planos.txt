@@ -1,0 +1,16 @@
+facilitações
+	-manuseio de ficha
+		-interface por onde as fichas podem ser acessadas e editadas (não dá permissão pros jogadores editarem)
+			-nessa interface é possivel rolar testes
+			-jogadores podem upar quando vem xp (gastando esse XP)
+			-jogadores podem alterar background e etc
+    -combate
+		-rolagens automáticas
+			já faz os ataques tudo e altera os status nas fichas (de player e npc)
+		-posição campo de batalha
+			opção de fazer as paradas se mexerem sozinhas com um pathfinding ou algo assim
+	-economia
+		-contabiliza consumo de npcs
+		-contabiliza produção de npcs
+		-contabiliza comércio
+		-npcs comprarm e vendem criando mercado
