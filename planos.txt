@@ -14,3 +14,6 @@ facilitações
 		-contabiliza produção de npcs
 		-contabiliza comércio
 		-npcs comprarm e vendem criando mercado
+	-musica e sons
+		-um player leve e eficiente
+		-uma biblioteca que facilite a organização por temas, emoções e etc
