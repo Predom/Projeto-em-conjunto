@@ -1,50 +1,24 @@
-#include <sfml\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 
-using namespace sf;
+int main()
+{
+    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    sf::CircleShape shape(100.f);
+    shape.setFillColor(sf::Color::Green);
 
-int main () {
-
-    RenderWindow w;
-
-    w.create(VideoMode(750, 400), "Window");
-
-    while (w.isOpen()){
-
-        float j = 0;
-
-        for (float i = 0; i <= 800; i+=0.1){
-
-            Event e;
-
-            while (w.pollEvent(e)){
-
-                switch (e.type) {
-
-                case Event::Closed: w.close(); break;
-
-                default: break;
-
-                }
-            }
-
-            if (i > 350) j+=0.02;
-
-            w.clear(Color::White);
-
-            CircleShape c (10-j+i/10);
-
-                c.setPosition(i, 190-i/10);
-
-                c.setFillColor(Color(255-i/3, 255-i/3, 0+i/3));
-
-            w.draw(c);
-
-            w.display();
-
+    while (window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                window.close();
         }
 
+        window.clear();
+        window.draw(shape);
+        window.display();
     }
 
-return 0;
-
+    return 0;
 }
